@@ -1,22 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Webville Tunes</title>
-<meta charset="utf-8">
-<script src="playlist.js"></script>
-<link rel="stylesheet" href="playlist.css">
+  <title>Portfolio Dr Gerhard Coetzee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+
+ .imgborder{
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+  .image {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      max-width: 80%;
+  }
+
+   .container-footer {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      max-width: 80%;
+  }
+  .navbar {
+      padding: 15px 30px
+      margin-left: 150px;
+      margin-bottom: 0;
+      border: 0;
+      border-width:1px 0;
+      border-radius: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-align: center;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+  }
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+  div.container {
+      display:inline-block;
+  }
+}
+  </style>
+
+<script>
+var shiftWindow = function() { scrollBy(0, -100) };
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);
+</script>
 </head>
 <body>
-<form>
-<input type="text" id="songTextInput" size="40" placeholder="Song name">
-<input type="button" id="addButton" value="Add Song">
-</form>
-<ul id="playlist">
-    <li>Blue suede strings, by Elvis Pagely</li>
-    <li>Great objects on fire, by Jerry JASON Lewis</li>
-    <li>I code the line, by Johnny JavaScript</li>
-    <li>That'll be the Data, by Buddy Bidly and the Variables</li>
-    <li>Your random heart, by Hank "Math" Williams</li>
-</ul>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">DR GERHARD COETZEE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin" id="about">About</h3>
+<h4>I am a published author, superior in research, writing documentation and in communication skills.</h4>
+  <h4>I am a specialist in social media marketing, media marketing, training & presentations and  Search Engine Optimisation.</h4>
+  <h4>I am a web (HTML5, CSS3, CSS Grid & Bootstrap) and App developer (iOS & Android).</h4>
+  <h4> Degrees: BA, BTh (University of Pretoria), MTh, DTh (University of Stellenbosch).</h4><br>
+  <img src="20170429_151024.jpg" class="img-responsive img-circle margin imgborder style="display:inline" alt="Dr Gerhard Coetzee" width="450" height="450">
+  <h3>I'm a Creator of Solutions</h3>
+</div>
+
+<!-- Second Container (Grid) -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin" id="portfolio">Portfolio</h3>
+  <h4>Web Applications</h4>
+ <div class="row">
+    <div class="col-sm-4">
+      <a href="https://sites.google.com/view/learntoflyadrone/home"><img src="WebDrone.JPG" class="img-responsive margin" style="width:100%;height:220px; alt="Learn To Fly A Drone"></>
+    </div>
+    <div class="col-sm-4"> 
+      <a href="https://sites.google.com/view/lingolab/home"><img src="WebLinguiLab.JPG" class="img-responsive margin" style="width:100%;height:220px; alt="LinguiLab"></a>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="WebPortfolio.JPG" class="img-responsive margin" style="width:100%;height:220px; alt="Image">
+    </div>
+ <div class="row">
+      <h4>Apps</h4>
+    <div class="col-sm-4">
+      <p>Pre- & Postflight Checklist Drones</p>
+      <a href="#"><img src="Pre_and_Post_FlightChecklistDrones App.JPG" class="img-responsive margin" style="width:60%;height:300px; alt="Pre- & Postflight Checklist Drones"></a>
+    </div>
+    <div class="col-sm-4">
+      <p>Flight Folio Drones</p>
+      <a href="#"><img src="Flight Folio App.JPG" class="img-responsive margin" style="width:60%;height:300px; alt="Flight Folio Drones"></a>
+    </div>
+    <div class="col-sm-4">
+    <p>Battery Log Drones</p>
+      <a href="#"><img src="App Battery Log.JPG" class="img-responsive margin" style="width:60%;height:300px; alt="Battery Log Drones"></a>
+    </div>
+   </div>  
+  </div>
+ </div>
+</div>
+
+<!-- Third Container (Grid) -->
+  <div class="container-fluid bg-3 text-center">
+  <h3 class="margin" id="contact">Contact</h3>
+     <div class="container">
+     <div class="col-sm-6">
+       <p style="text-align:left;">Contact Me using my Web Form</p>
+         <form action="/action_page.php">
+          <p style="text-align:left;">First name:</p>
+          <input type="text" name="firstname" style="width:100%;">
+          <br>
+          <p style="text-align:left;">Last name:</p>
+          <input type="text" name="lastname" style="width:100%;">
+          <br>
+          <p style="text-align:left;">Email:</p>
+          <input type="email" name="Email" style="width:100%;"><br>
+          <p style="text-align:left;">Message:</p>
+          <textarea name="message" style="width:100%; height:100px;"></textarea>
+          <br>
+          <br>
+          <input type="submit"><br>
+          <br>
+         </form>
+       </div>
+    <div class="col-sm-6">
+    <p style="text-align:left;">Contact Me using my Contact Details:</p>
+    <ul>
+    <li><p style="text-align:left;">Tel: +27 826462405</p></li>
+    <li><p style="text-align:left;">Email: <a href="mailto:gerhardseepos@gmail.com">gerhardseepos@gmail.com</a></p></li>
+    </ul>
+    <br>
+    <p style="text-align:left;">Contact Me using my Social Media Platforms:</p>
+    <div id="parent">
+    <div class="center"><div class="image"><a href="https://www.facebook.com/coetzeeg"><img src="https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-fLogo-Blue-broadcast-2.png" style="width:50px;height:50px;border:0;" alt="Facebook logo"></a></div>
+    <div class="image"><a href="https://twitter.com/CoetzeeGerhard"><img  src="https://cdn.pixabay.com/photo/2014/04/03/11/53/twitter-312464_960_720.png" style="width:50px;height:50px;border:0;" alt="Twitter logo"></a></div>
+</div>
+    <div style="clear:both"></div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p style="font-size:70%;">Website By <a href="mailto:gerhardseepos@gmail.com">Gerhard Coetzee</a></p> 
+</footer>
+
 </body>
 </html>
