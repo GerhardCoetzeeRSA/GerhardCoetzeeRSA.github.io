@@ -1,0 +1,109 @@
+
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+
+        var shiftWindow = function() { scrollBy(0, -navbarOffset); };
+        window.addEventListener("hashchange", shiftWindow);
+        if (window.location.hash) shiftWindow();
+
+.imgborder {
+  border: 5px solid white;
+}
+
+.bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+}
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+.bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+}
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    max-width: 80%;
+}
+
+ .container-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 80%;
+}
+.navbar {
+    padding: 10px 10px;
+    margin-left: 0px;
+    margin-bottom: 0;
+    border: 0;
+    border-width:1px 0;
+    border-radius: 0;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+div.container {
+    display:inline-block;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+/* Add a hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* JS */
+.fa-js-square {
+    color: white;
+}
