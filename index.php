@@ -9,5 +9,11 @@
  </head>
  <body>
  <h1>PHP connect to MySQL</h1>
+
+<?php
+//Step2
+$query = "SELECT * FROM Portfolio_Address_Form";
+mysqli_query($db, $query) or die('Error querying database.');
+?>
 </body>
 </html>
